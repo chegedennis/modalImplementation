@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: darkgrey;
+}
+
+.menu {
+  text-align: center;
+  background: darkgreen;
+}
+
+.menu .menu-items {
+  list-style: none;
+}
+
+.menu-items li {
+  display: inline-flex;
+  margin: 20px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.menu-items li:hover {
+  color: rgb(146, 146, 9);
+}
+
+.drop-down {
+  display: none;
+}
+
+.menu-items li:hover .drop-down {
+  display: block;
+  background: rgb(0, 100, 0);
+  position: absolute;
+  margin-top: 30px;
+  margin-left: i5px;
+}
+
+.drop-down ul li {
+  display: block;
+  border-bottom: 1px #fff dotted;
+}
+
+.drop-down ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.drop-down ul li a:hover {
+  color: rgb(116, 116, 9);
+}
+
+.drop-down ul li:last-child {
+  border-bottom: none;
+}
+
+/* modal */
+.modal {
+  display: none;
+  padding: 20px;
+  background: rgba(0, 0, 100, 0.85);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 420px;
+  height: 320px;
+}
+
+.modal-span {
+  float: right;
+  font-size: 40px;
+  margin-top: -30px;
+  margin-right: -20px;
+  padding-top: 0;
+  color: darkgrey;
+}
+
+.modal-span:hover {
+  color: black;
+  cursor: default;
+}
+
+.modal-h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.modal-label {
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+.modal-form {
+  padding-top: 30px;
+}
+
+.input-box {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.modal-button {
+  background: green;
+  margin-top: 10px;
+  margin-left: 40px;
+  width: 80%;
+  height: 25px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.modal-button:hover {
+  background: yellow;
+  color: blue;
+}
+
+.loginmodal {
+  display: none;
+  padding: 20px;
+  background: rgba(0, 0, 100, 0.85);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 420px;
+  height: 320px;
+}
+
+.lists {
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
